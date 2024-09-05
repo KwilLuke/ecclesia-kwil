@@ -60,7 +60,7 @@ if [ "$CGO_ENABLED" = "1" ] && [ "$GO_LINKMODE" = "static" ]; then
     GO_BUILDTAGS="$GO_BUILDTAGS osusergo netgo"
 fi
 
-GO_LDFLAGS="$GO_LDFLAGS -s -w -trimpath"
+GO_LDFLAGS="$GO_LDFLAGS -s -w"
 
 export GO_LDFLAGS="$GO_LDFLAGS" # https://github.com/koalaman/shellcheck/issues/2064
 
